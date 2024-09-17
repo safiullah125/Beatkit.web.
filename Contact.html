@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BeatKit</title>
+    <link rel="stylesheet" href="./Contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+
+    <!-- This is a main nav in html -->
+    
+    <div class="main-nav">
+
+        <div class="n-logo">
+            <img width="150px" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/Logo-kit.png" alt="beatkitlogo">
+        </div>
+
+
+
+        <div class="n-menu">
+        <ul>
+        <li><a href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Aboutus.html" target="_blank">About Us <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Artist</a>
+        </div>
+        </li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Tours.html" target="_blank">Tour <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Single Tour</a>
+        </div>
+        </li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Album.html" target="_blank">Album <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Single Album</a>
+        </div>
+        </li>
+        <li><a href="http://127.0.0.1:5500/Contact.html" target="_blank">Contact</a></li>
+
+        <!-- <li class="dropdown">
+            <a href="#">News <i class="bi bi-caret-down-fill"></i></a> 
+        <div class="dropdown-content">
+            <a href="#">Archiv Blog</a>
+            <a href="#">Single post</a>
+        </div>
+        </li> -->
+            
+        </ul>
+        </div>
+
+
+        <div class="sidebarparent">
+        <ul class="sidebar">
+            <li onclick="hidesidebarparent()"><a href="#"><i class="bi bi-x-lg"></i></a></li>
+        <li><a href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Aboutus.html" target="_blank">About Us <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Artist</a>
+        </div>
+        </li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Tours.html" target="_blank">Tour <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Single Tour</a>
+        </div>
+        </li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Album.html" target="_blank">Album <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Single Album</a>
+        </div>
+        </li>
+        <li><a href="http://127.0.0.1:5500/Contact.html" target="_blank">Contact</a></li>
+
+        <!-- <li class="dropdown">
+            <a href="#">News <i class="bi bi-caret-down-fill"></i></a> 
+        <div class="dropdown-content">
+            <a href="#">Archiv Blog</a>
+            <a href="#">Single post</a>
+        </div>
+        </li> -->
+            
+        </ul>
+        </div>
+        
+        
+        <div class="icon-list">
+            <li  onclick="showsidebarparent()"><a href="#"><i class="bi bi-list"></i></a></li>
+        </div>
+
+        <div class="n-icon">
+        <div class="youtube"><i class="bi bi-youtube"></i></div>
+        <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+        <div class="spotify"><i class="bi bi-spotify"></i></div>
+        <div class="music"><i class="bi bi-music-note-beamed"></i></div>
+        <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+        </div>
+
+
+        
+        
+    </div>
+    
+    
+
+
+    <!-- This is a main disply class in html -->
+    
+     <div class="main-disply">
+        <div class="m-disply"> 
+        <div class="md-card"></div>
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        
+        </div>
+    </div>
+    
+    <!-- visit us class in html -->
+
+    <div class="visit-us">
+        <div class="vu-left">
+            <div class="vu-left-head">
+                <p>Get in Touch</p>
+                <h2>Let's Talk</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+
+            <hr>
+
+            <div class="vu-left-contact">
+                <form action="">
+
+                    <div class="ct-lab">
+                        
+                    <div class="lab-inp">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="Name" placeholder="Name">
+                    </div>
+                    <div class="lab-inp">
+                    <label for="Company">Company</label>
+                    <input type="text" name="Company" id="Company" placeholder="Company">
+                    </div>
+                    </div>
+
+
+                    <div class="ct-lab">
+                    
+                    <div class="lab-inp">
+                    <label for="Phone number">Phone Number</label>
+                    <input type="number" name="Phone number" id="Phone number" placeholder="Phone Number">
+                    </div>
+                    <div class="lab-inp">
+                    <label for="Email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    </div>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="4" id="message" placeholder="Message"></textarea>
+                    <br>
+                    <button>send</button>
+                </form>
+            </div>
+            
+        </div>
+        <div class="vu-right">
+            <div class="vu-right-head">
+                <p>Visit Us</p>
+                <h2>Direct contact</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+
+            <hr>
+            
+            <div class="vu-right-foot">
+                <div class="vu-foot-location">
+                     <i class="bi bi-geo-alt"></i>
+                    
+                    <div class="vfl">
+                    <h3>Location </h3>
+                    <p>Jln Cempaka Wangi No 22, Jakarta - Indonesia </p>
+                    </div>
+                </div>
+
+
+                
+                <div class="vu-foot-location">
+                    <i class="bi bi-telephone-plus"></i>
+                    <div class="vfl">
+                    <h3>Call Us</h3>
+                    <p>+(62)21-2002-2012</p>
+                    </div>
+                </div>
+
+
+                <div class="vu-foot-location">
+                   <i class="bi bi-envelope"></i>
+                    <div class="vfl">
+                    <h3>Email Us</h3>
+                    <p>support@yourmail.tld</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- This  is a social media class in html -->
+    
+
+    <div class="social-media-parent">
+
+        <div class="social-media">
+            <p>Our Social Media</p>
+            <h2>Get in Connect With Us</h2>
+            <div class="sm-icon">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-tiktok"></i>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- This is a footer in html -->
+
+    <footer>
+            <div class="foot">
+                <div class="ft-left">
+                    <div class="ft-card">
+                        <div class="ft-card-img">
+                            <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/Logo-kit.png" alt="">
+                            <p>Template Kit for Beat Music or DJ. Futuristic Design and full of light.  You can easily start and build your content writing service website with this elementor template kit.</p>
+                            <div class="ft-icon">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ft-right">
+                    <div class="ft-company">
+                        <h3>About Us</h3>
+                        <hr>
+                        <div class="ft-links">
+                            <ul>
+                                <li>About us</li>
+                                <li>Company</li>
+                                <li>Sponsorship</li>
+                                <li>Tours & Events</li>
+                                <li>Careers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <div class="ft-company">
+                        <h3>Support</h3>
+                        <hr>
+                        <div class="ft-links">
+                            <ul>
+                                <li>Artist Management</li>
+                                <li>Contact Us</li>
+                                <li>Community</li>
+                                <li>Fans</li>
+                                <li>Merchandise</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="ft-foot">
+                <hr>
+                <p>© 2021 Beatkit is Proudly Powered by MoxCreative</p>
+            </div>
+            
+        </footer>
+        
+    
+        <!-- This is a script tag in html -->
+
+        <script>
+            function showsidebarparent(){
+                const sidebarparent = document.querySelector('.sidebarparent')
+                sidebarparent.style.display = 'flex'
+            }
+
+
+            function hidesidebarparent(){
+                const sidebarparent = document.querySelector('.sidebarparent')
+                sidebarparent.style.display = 'none'
+            }
+
+
+        </script>
+        
+    
+    
+</body>
+</html>

@@ -1,0 +1,654 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    overflow-x: hidden !important;
+    background-color: #0E0837;
+    color: white;
+    
+} 
+
+body h1,h2,h3{
+ font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* This is a Navigation bar css */
+
+.main-nav{
+    
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center; 
+    z-index: 1000;
+    box-shadow:2px 2px 2px #0E0837;
+    border-bottom: 1px solid  #0E0837;
+}
+
+/* This is a sidebar navbar in css */
+
+.sidebarparent{
+    display:none ;
+    position: fixed;
+    top: 4.5rem;
+    right: 0;
+    height: 80vh;
+    width: 290px;
+    z-index: 999;
+    background-color: rgba(211, 211, 211, 0.185);
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 5px 2px lightgray;
+}
+
+.sidebarparent ul{
+    list-style-type: none;
+}
+
+.sidebarparent ul li{
+    margin: 1.8rem 0;
+}
+
+.sidebarparent ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 1rem;
+    display: block;
+}
+
+.sidebarparent ul li a:hover{
+    color: blue;
+    background-color: lightgray;
+}
+
+
+/* This is a sidebar end */
+
+.n-logo,
+.n-menu ul,
+.n-icon{
+    display: flex;
+}
+
+
+.n-icon{
+    color: white;
+    gap: 1.5rem;
+    font-size: 22px;
+}
+
+.n-menu ul{
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0.5rem;
+    
+}
+
+.n-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.n-menu ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 1rem;
+    display: block;
+}
+
+.n-menu ul li a:hover{
+    color: blue;
+    background-color: lightgray;
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    transition: all 0.4s;
+
+}
+
+.dropdown .dropdown-content a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 16px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+.icon-list{
+    color: white;
+    font-size: 45px;
+    display: none;
+}
+
+
+.icon-list li{
+    list-style-type: none;
+}
+
+.icon-list li a{
+    color: white;
+}
+
+
+
+
+
+/* This is a main disply class cs */
+
+.main-disply{
+    width: 100%;
+    padding: 8rem 1rem;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #0E0837 30%, #D71462 70%);
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.m-disply{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    
+}
+
+.md-card{
+    width: 20%;
+    border: 10px solid #EF0058;
+    padding:6.5rem 1rem;
+    box-shadow: 1px 1px 16px 6px #EF0058;
+
+    
+}
+
+.m-disply h1{
+    font-size: 60px;
+    position: absolute;
+    top: 3rem;
+    left: 3.5rem;
+}
+
+.m-disply p{
+    font-size: 18px;
+    position: absolute;
+    top: 9rem;
+    left: 3.8rem;
+    
+}
+
+
+/* This is a visit us  */
+
+.visit-us{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.vu-left{
+    width: 56%;
+    
+}
+.vu-left-head{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.vu-left-head p:nth-child(1){
+    font-size: 20px;
+    color: #EF0058;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.vu-left-head h2{
+    font-size: 48px;
+}
+
+.vu-left-head p:nth-child(3){
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+
+.vu-left hr{
+    border: 1px solid #482BAE;
+    border-block-end-color: #EF0058;
+    margin: 1.4rem 0;
+}
+
+
+
+.vu-left-contact{
+    width: 100%;
+    margin: 2rem auto;
+}
+.lab-inp{
+    display: flex;
+    flex-direction: column;
+     width: 49%;
+}
+
+
+.vu-left-contact input,textarea{
+    padding: 1rem 2rem;
+    background-color: #202369;
+    outline: none;
+    border: none;
+    color: white;
+    margin: 0.6rem 0;
+}
+
+
+.vu-left-contact input:focus{
+    background-color: #fff;
+    color: black;
+    border: 1px solid #D00068;
+}
+
+.vu-left-contact textarea:focus{
+    background-color: #fff;
+    color: black;
+    border: 1px solid #D00068;
+}
+
+
+
+
+
+.ct-lab{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vu-left-contact input:nth-child(4){
+    width: 100%;
+   
+}
+
+.vu-left-contact textarea{
+    width: 100%;
+    
+}
+
+.vu-left-contact button{
+    width: 100%;
+    padding: 0.8rem 1.4rem;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+}
+
+
+.vu-right{
+    width: 40%;
+    padding: 1rem;
+}
+
+.vu-right-head{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.vu-right-head p:nth-child(1){
+    font-size: 23px;
+    color: #EF0058;
+}
+
+.vu-right-head h2{
+    font-size: 40px;
+
+}
+
+.vu-right-head p:nth-child(3){
+    font-size: 17px;
+    line-height: 1.6rem;
+}
+
+.vu-right hr{
+    border: 1px solid #482BAE;
+    border-block-end-color: #EF0058;
+    margin: 1rem 0;
+}
+
+
+.vu-right-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.vu-foot-location{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+}
+
+.vu-foot-location h3{
+    font-size: 30px;
+    margin: 0.5rem 0;
+}
+
+.vu-foot-location i{
+    background: linear-gradient(to right, #0B47CD, #B50075);
+    padding: 1.5rem;
+    font-size: 24px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+
+/* this is a social media class css */
+
+.social-media-parent{
+    background-color: #fff;
+    padding: 1rem 0;
+}
+
+.social-media{
+    width: 80%;
+    margin: auto;
+    background: linear-gradient(to right, #0B1656, #2C053A);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.social-media P{
+    font-size: 20px;
+    color: #EF0058;
+    font-weight: bold;
+}
+
+.social-media h2{
+    font-size: 40px;
+    margin: 1rem 0;
+}
+
+.sm-icon{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 25px;
+}
+
+
+/* This is a footer in css */
+
+footer{
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: auto;
+    background-image: url("https://elements-resized.envatousercontent.com/elements-cover-images/680be59b-16e0-4935-81ec-c14b0c0de87c?w=1370&cf_fit=scale-down&q=85&format=auto&s=6fc8134e971162a59962815705eb228ae97f534c91395649df0da2cdff5a972b");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foot{
+    width: 80%;
+    margin: 7rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ft-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft-card{
+    width: 60%;
+    border: 13px solid  #F1005C;
+    box-shadow: 1px 1px 18px 4px #F1005C;
+    padding: 1.5rem 2.5rem;
+    
+    
+}
+
+.ft-card p{
+    padding: 1rem 3rem ;
+    margin-right: -10rem;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+
+}
+
+.ft-icon{
+    bottom: 1.5rem;
+    font-size: 25px;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.ft-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+.ft-company{
+    width: 50%;
+    background-color: transparent;
+    padding: 2rem;
+}
+
+.ft-company h4{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.ft-company hr{
+    border: 1px solid #9B0483;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.ft-links ul{
+    list-style-type: none;
+}
+
+.ft-links ul li{
+    margin: 1rem 0;
+}
+
+.ft-foot{
+    width: 80%;
+    margin:2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    text-align: center;
+}
+
+.ft-foot hr{
+    border:0.4px  solid #9B0483;
+}
+
+.ft-foot p{
+    font-size: 16px;
+}
+
+
+/* This is a footer in media queries */
+
+
+@media (max-width:1100px){
+    .foot{
+        width: 95%;
+    }
+
+
+    .ft-card p{
+        width: 100%;
+        padding: 0.1rem 0.2rem ;
+        margin-right: 10rem;
+        line-height: normal;
+        margin: 1.5rem 0;
+}
+
+    
+}
+
+@media (max-width:970px){
+    .ft-card{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:770px){
+    .foot{
+        flex-direction: column;
+    }
+
+    .ft-left,
+    .ft-right{
+        width: 100%;
+    }
+}
+
+
+
+
+/* This is a social media media queries */
+
+@media (max-width:770px){
+    .social-media{
+        width: 95%;
+    }
+
+    .social-media h2{
+        font-size: 30px;
+    }
+}
+
+
+
+
+/* This is a visit us class media queries */
+
+@media (max-width:1100px){
+    .visit-us{
+        width: 95%;
+    }
+}
+
+@media (max-width:770px){
+    .visit-us{
+        flex-direction: column;
+    }
+
+    .vu-left{
+        width: 85%;
+    }
+    .vu-right{
+        width: 85%;
+    }
+
+
+}
+
+
+
+/* This is a main disply class media queries */
+
+@media (max-width:1100px){
+    .m-disply{
+        width: 95%;
+    }
+
+}
+
+@media (max-width:770px){
+    .m-disply{
+        text-align: center;
+    }
+
+    .md-card{
+        width: 40%;
+    }
+    
+}
+
+@media (max-width:600px){
+    .md-card{
+        width: 60%;
+    }
+    .m-disply h1{
+        top:2rem ;
+        left: 1.5rem;
+        font-size: 40px;
+    }
+    .m-disply p{
+        top: 6rem;
+        left: 1.5rem;
+        font-size: 17px;
+    }
+}
+
+/* This is a Navigation bar media queries */
+
+@media (max-width:1100px){
+    .n-menu ul{
+        display: none;
+    }
+
+    .icon-list{
+        display: block;
+    }
+}
+
+@media (max-width:770px){
+    .main-nav{
+        justify-content: space-between;
+    }
+
+    .n-logo img{
+        width: 220px;
+    }
+        
+    .n-icon{
+        display: none;
+    }
+
+    .icon-list{
+        font-size: 60px;
+    }
+}
+

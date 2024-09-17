@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums - BeatKit</title>
+    <link rel="stylesheet" href="./Album.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+
+    <!-- This is a main nav class in html -->
+
+    <div class="main-nav">
+
+
+        <div class="n-logo">
+            <img width="150px" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/Logo-kit.png" alt="beatkitlogo">
+        </div>
+
+
+        <div class="n-menu">
+        <ul>
+        <li><a href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Aboutus.html" target="_blank">About Us <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Artist</a>
+        </div>
+        </li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Tours.html" target="_blank">Tour <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Single Tour</a>
+        </div>
+        </li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Album.html" target="_blank">Album <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Single Album</a>
+        </div>
+        </li>
+        <li><a href="http://127.0.0.1:5500/Contact.html" target="_blank">Contact</a></li>
+
+        <!-- <li class="dropdown">
+            <a href="#">News <i class="bi bi-caret-down-fill"></i></a> 
+        <div class="dropdown-content">
+            <a href="#">Archiv Blog</a>
+            <a href="#">Single post</a>
+        </div>
+        </li> -->
+            
+        </ul>
+        </div>
+
+
+        <div class="sidebarparent">
+        <ul class="sidebar">
+            <li onclick="hidesidebarparent()"><a href="#"><i class="bi bi-x-lg"></i></a></li>
+        <li><a href="http://127.0.0.1:5500/index.html" target="_blank">Home</a></li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Aboutus.html" target="_blank">About Us <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Artist</a>
+        </div>
+        </li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Tours.html" target="_blank">Tour <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Single Tour</a>
+        </div>
+        </li>
+        <li class="dropdown">
+            <a href="http://127.0.0.1:5500/Album.html" target="_blank">Album <i class="bi bi-caret-down-fill"></i></a>
+        <div class="dropdown-content">
+            <a href="#">Single Album</a>
+        </div>
+        </li>
+        <li><a href="http://127.0.0.1:5500/Contact.html" target="_blank">Contact</a></li>
+
+        <!-- <li class="dropdown">
+            <a href="#">News <i class="bi bi-caret-down-fill"></i></a> 
+        <div class="dropdown-content">
+            <a href="#">Archiv Blog</a>
+            <a href="#">Single post</a>
+        </div>
+        </li> -->
+            
+        </ul>
+        </div>
+        
+        
+        
+
+        <div class="icon-list">
+            <li  onclick="showsidebarparent()"><a href="#"><i class="bi bi-list"></i></a></li>
+        </div>
+
+        <div class="n-icon">
+        <div class="youtube"><i class="bi bi-youtube"></i></div>
+        <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+        <div class="spotify"><i class="bi bi-spotify"></i></div>
+        <div class="music"><i class="bi bi-music-note-beamed"></i></div>
+        <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+        </div>
+
+        
+    </div>
+    
+    
+    <!-- This is a main disply class in html -->
+    
+     <div class="main-disply">
+        <div class="m-disply"> 
+        <div class="md-card"></div>
+            <h1>Albums</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        
+        </div>
+    </div>
+    
+    <!-- This is a  new release in html-->
+
+    <div class="new-release">
+        <div class="nr-left">
+            <div class="nl-img">
+                <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/girl-dj-style-minimal-art-modern-design--800x800.jpg" alt="">
+            </div>
+            <p>Available on</p>
+            <div class="nr-icon">
+                    <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+                    <div class="spotify"><i class="bi bi-spotify"></i></div>
+                    <div class="music"><i class="bi bi-music-note-beamed"></i></div>
+                    <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    </div>
+        </div>
+        <div class="nr-right">
+            <div class="nr-r-head">
+                <p>New Release</p>
+                <h2>"Our Journey"</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
+            <div class="nr-r-date">
+                <i class="bi bi-clipboard"></i>
+                <p>07 April 2021</p>
+                <i class="bi bi-bookmark"></i>
+                <p>QuickenWorks Record</p>
+            </div>
+
+            <div class="nr-list">
+                <p>Track List</p>
+
+
+                <ul>
+                    <li><i class="bi bi-music-note-beamed"></i> From Start</li>
+                    <li><i class="bi bi-music-note-beamed"></i> In Your Heart</li>
+                    <li><i class="bi bi-music-note-beamed"></i> logical Mind</li>
+                    <li><i class="bi bi-music-note-beamed"></i> Do You Love Me? </li>
+                    <li><i class="bi bi-music-note-beamed"></i> The Beat of Your Heart</li>
+                    <li><i class="bi bi-music-note-beamed"></i> Last Journey</li>
+                    <li><i class="bi bi-music-note-beamed"></i> Other Ways</li>
+                </ul>
+
+                <button class="nr-btn1">Play Album</button>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+
+
+    <!-- This is a our master class in html -->
+
+    <div class="our-master">
+        <div class="om-head">
+            <p>Other Album</p>
+            <h2>Our Masterpiece</h2>
+        </div>
+
+        <div class="om-cards">
+
+            <div class="om-card">
+                <div class="om-card-img">
+                    <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/art1-e1618241918767.png" alt="">
+                </div>
+                <h6>SVEN MATH</h6>
+                <p>2012</p>
+
+                <div class="om-icon">
+                    <p>Available at</p>
+                    <div class="apple"><i class="bi bi-apple"></i></div>
+                    <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+                    <div class="spotify"><i class="bi bi-spotify"></i></div>
+                    <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    </div>
+                </div>
+            <div class="om-card">
+                <div class="om-card-img">
+                    <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/art2-e1618241964387.png" alt="">
+                </div>
+                <h6>Electromix</h6>
+                <p>2013</p>
+
+                <div class="om-icon">
+                    <p>Available at</p>
+                    <div class="apple"><i class="bi bi-apple"></i></div>
+                    <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+                    <div class="spotify"><i class="bi bi-spotify"></i></div>
+                    <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    </div>
+                </div>
+            <div class="om-card">
+                <div class="om-card-img">
+                    <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/art3-e1618241988474.png" alt="">
+                </div>
+                <h6>Electro</h6>
+                <p>2015</p>
+
+                <div class="om-icon">
+                    <p>Available at</p>
+                    <div class="apple"><i class="bi bi-apple"></i></div>
+                    <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+                    <div class="spotify"><i class="bi bi-spotify"></i></div>
+                    <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        <div class="om-cards">
+
+            <div class="om-card">
+                <div class="om-card-img">
+                    <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/art4-e1618241942108.png" alt="">
+                </div>
+                <h6>Dark Electro Vol.1</h6>
+                <p>2017</p>
+
+                <div class="om-icon">
+                    <p>Available at</p>
+                    <div class="apple"><i class="bi bi-apple"></i></div>
+                    <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+                    <div class="spotify"><i class="bi bi-spotify"></i></div>
+                    <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    </div>
+                </div>
+            <div class="om-card">
+                <div class="om-card-img">
+                    <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/art5-e1618241894850.png" alt="">
+                </div>
+                <h6>Drum and Bass</h6>
+                <p>2018</p>
+
+                <div class="om-icon">
+                    <p>Available at</p>
+                    <div class="apple"><i class="bi bi-apple"></i></div>
+                    <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+                    <div class="spotify"><i class="bi bi-spotify"></i></div>
+                    <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    </div>
+                </div>
+            <div class="om-card">
+                <div class="om-card-img">
+                    <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/antique-clock-dial-close-up-vintage-pocket-watch--800x800.jpg" alt="">
+                </div>
+                <h6>Timeless</h6>
+                <p>2019</p>
+
+                <div class="om-icon">
+                    <p>Available at</p>
+                    <div class="apple"><i class="bi bi-apple"></i></div>
+                    <div class="cloude"><i class="bi bi-cloud-fill"></i></div>
+                    <div class="spotify"><i class="bi bi-spotify"></i></div>
+                    <div class="bar-line"><i class="bi bi-bar-chart-line-fill"></i></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    
+    <!-- This is a news update class in html -->
+
+    <div class="news">
+            <p>Latest</p>
+            <div class="n-update">
+                <h2>News & Update</h2>
+                <button class="news1">
+                    <i class="bi bi-arrow-right"></i>
+                    More News
+                </button>
+                
+            </div>
+            <hr>
+            
+
+            <div class="n-cards">
+                <div class="n-card n-card1">
+                    <img width="100%px" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/white-on-white-and-marble-on-marble--1536x1025.jpg" alt="">
+                    <div class="n-card1-1">
+                    <h3>“Marble” Album Ready on Online Music Platform</h3>
+                    <p>April 7, 2021 / No Comments</p>
+                    </div>
+                </div>
+                <div class="n-card n-card2">
+                    <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/disco-1536x1024.jpg" alt="">
+                    <div class="n-card1-1">
+                    <h3>Single “Pink Love” brings the 80’s Style</h3>
+                    <p>April 7, 2021 / No Comments</p>
+                    </div>
+                </div>
+                <div class="n-card n-card3">
+                    <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/dj-in-nightclub-1536x1025.jpg" alt="">
+                    <div class="n-card1-1">
+                    <h3>Online Performance Featuring With Rich Brian</h3>
+                    <p>April 7, 2021 / No Comments</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    
+    
+    <!-- This is a footer in html -->
+
+        <footer>
+            <div class="foot">
+                <div class="ft-left">
+                    <div class="ft-card">
+                        <div class="ft-card-img">
+                            <img width="100%" src="https://demo.moxcreative.com/beatkit/wp-content/uploads/sites/21/2021/04/Logo-kit.png" alt="">
+                            <p>Template Kit for Beat Music or DJ. Futuristic Design and full of light.  You can easily start and build your content writing service website with this elementor template kit.</p>
+                            <div class="ft-icon">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ft-right">
+                    <div class="ft-company">
+                        <h3>About Us</h3>
+                        <hr>
+                        <div class="ft-links">
+                            <ul>
+                                <li>About us</li>
+                                <li>Company</li>
+                                <li>Sponsorship</li>
+                                <li>Tours & Events</li>
+                                <li>Careers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <div class="ft-company">
+                        <h3>Support</h3>
+                        <hr>
+                        <div class="ft-links">
+                            <ul>
+                                <li>Artist Management</li>
+                                <li>Contact Us</li>
+                                <li>Community</li>
+                                <li>Fans</li>
+                                <li>Merchandise</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="ft-foot">
+                <hr>
+                <p>© 2021 Beatkit is Proudly Powered by MoxCreative</p>
+            </div>
+            
+        </footer>
+        
+        
+        
+        <!-- This is a script tag in html -->
+
+        <script>
+            function showsidebarparent(){
+                const sidebarparent = document.querySelector('.sidebarparent')
+                sidebarparent.style.display = 'flex'
+            }
+
+
+            function hidesidebarparent(){
+                const sidebarparent = document.querySelector('.sidebarparent')
+                sidebarparent.style.display = 'none'
+            }
+
+
+        </script>
+        
+        
+        
+        
+</body>
+</html>

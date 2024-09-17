@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+    font-family: sans-serif;
+    overflow-x: hidden !important;
+    background-color: #0E0837;
+    color: white;
+    
+} 
+
+body h1,h2,h3{
+ font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* This is a Navigation bar css */
+
+.main-nav{
+    
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center; 
+    z-index: 1000;
+    box-shadow:2px 2px 2px #0E0837;
+    border-bottom: 1px solid  #0E0837;
+}
+
+
+/* This is a sidebar navbar in css */
+
+.sidebarparent{
+    display:none ;
+    position: fixed;
+    top: 4.5rem;
+    right: 0;
+    height: 80vh;
+    width: 290px;
+    z-index: 999;
+    background-color: rgba(211, 211, 211, 0.185);
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 5px 2px lightgray;
+}
+
+.sidebarparent ul{
+    list-style-type: none;
+}
+
+.sidebarparent ul li{
+    margin: 1.8rem 0;
+}
+
+.sidebarparent ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 1rem;
+    display: block;
+}
+
+.sidebarparent ul li a:hover{
+    color: blue;
+    background-color: lightgray;
+}
+
+/* This is sudebar end */
+
+
+.n-logo,
+.n-menu ul,
+.n-icon{
+    display: flex;
+}
+
+
+.n-icon{
+    color: white;
+    gap: 1.5rem;
+    font-size: 22px;
+}
+
+.n-menu ul{
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0.5rem;
+    
+}
+
+.n-menu ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.n-menu ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding: 1rem;
+    display: block;
+}
+
+.n-menu ul li a:hover{
+    color: blue;
+    background-color: lightgray;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    transition: all 0.4s;
+
+}
+
+.dropdown .dropdown-content a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 16px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.icon-list{
+    color: white;
+    font-size: 45px;
+    display: none;
+}
+
+
+.icon-list li{
+    list-style-type: none;
+}
+
+.icon-list li a{
+    color: white;
+}
+
+
+
+/* This is a mian disply class css */
+
+.main-disply{
+    width: 100%;
+    padding: 8rem 1rem;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #0E0837 30%, #D71462 70%);
+    opacity: 0.8;
+    transition: all 0.3s; 
+
+}
+
+.m-disply{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    
+}
+
+
+.md-card{
+    width: 20%;
+    border: 10px solid #EF0058;
+    padding:6.5rem 1rem;
+    box-shadow: 1px 1px 16px 6px #EF0058;
+
+    
+}
+
+.m-disply h1{
+    font-size: 60px;
+    position: absolute;
+    top: 3rem;
+    left: 3.5rem;
+}
+
+.m-disply p{
+    font-size: 18px;
+    position: absolute;
+    top: 9rem;
+    left: 3.8rem;
+    
+}
+
+/* This is a about tour class in css  */
+
+.About-tour{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 1rem;
+}
+
+.At-left{
+    width: 50%;
+    margin: 1rem 0;
+}
+
+.At-left p:nth-child(1){
+    color: #EF0058;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.At-left h2{
+    font-size: 40px;
+    margin: 1rem 0;
+}
+
+.At-left p:nth-child(3){
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.At-right{
+    width: 50%;
+}
+
+.Ar-img{
+    width: 70%;
+    margin-left: auto;
+    border: 10px solid #EA0058;
+}
+
+/* This is a seven msth class in css */
+
+.seven-math{
+    width: 80%;
+    margin:4rem auto;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.seven-math img{
+    border: 9px solid #EA0058;
+}
+
+
+
+
+.sm-img1,
+.sm-img3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sm-img2{
+    width: 50%;
+}
+
+
+/* This is a live concern class in css */
+
+.live-concert{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.live-concert .lc-head{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.live-concert .lc-head p{
+    color: #F1005C;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.live-concert .lc-head h2{
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+
+.lc-buy-ticket{
+    width: 80%;
+    margin:1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.lc-buy-ticket .buy-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background:linear-gradient(to right, #1D0639, #4D0640)
+    
+}
+
+.lc-buy-ticket .buy-date{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: #230639;
+    padding: 1.3rem 1.5rem;
+} 
+
+.buy-date i{
+    font-size: 30px;
+    background-color: #BE245A;
+    padding: 0.7rem;
+}
+
+
+.buy-date .dt-date h3{
+    font-size: 30px;
+}
+
+.buy-date h3{
+    font-size: 23px;
+}
+
+.lc-buy-ticket .buy-location{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    gap: 2rem;
+    padding: 1.3rem 1.5rem;
+}
+
+.buy-location i{
+    font-size: 30px;
+    background-color: #BE245A;
+    padding: 0.7rem;
+}
+
+.buy-location .buy-name h2{
+    font-size: 30px;
+}
+
+.buy-location .buy1{
+    padding: 0.6rem 1.4rem;
+    background-color: #3867F3;
+    border: none;
+    color: white;
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.buy-location .sold{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+/* This is a news class in css */
+
+.news{
+    width: 80%;
+    margin: 2rem  auto;
+
+}
+.news p{
+    color: #F1005C;
+    font-size: 20px;
+}
+
+.n-update{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.n-update h2{
+    font-size: 45px;
+}
+
+.n-update .news1{
+    padding: 0.4rem 1.4rem;
+    background-color: #3867F3;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.news hr{
+    margin: 0.4rem 0;
+    border-color: #64075A;
+}
+
+.n-cards{
+    width:100%;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.n-card{
+    width: 31.6%;
+    background-color: #110726;
+   
+}
+
+.n-card1-1{
+padding: 0.9rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+
+.n-card p{
+    padding: 0.3rem;
+    color: #F1005C;
+    font-size: 15px;
+}
+
+
+/* This is a footer in css  */
+
+footer{
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: auto;
+    background-image: url("https://elements-resized.envatousercontent.com/elements-cover-images/680be59b-16e0-4935-81ec-c14b0c0de87c?w=1370&cf_fit=scale-down&q=85&format=auto&s=6fc8134e971162a59962815705eb228ae97f534c91395649df0da2cdff5a972b");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foot{
+    width: 80%;
+    margin: 7rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ft-left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft-card{
+    width: 60%;
+    border: 13px solid  #F1005C;
+    box-shadow: 1px 1px 18px 4px #F1005C;
+    padding: 1.5rem 2.5rem;
+    
+    
+}
+
+.ft-card p{
+    padding: 1rem 3rem ;
+    margin-right: -10rem;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+
+}
+
+.ft-icon{
+    bottom: 1.5rem;
+    font-size: 25px;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.ft-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+.ft-company{
+    width: 50%;
+    background-color: transparent;
+    padding: 2rem;
+}
+
+.ft-company h4{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.ft-company hr{
+    border: 1px solid #9B0483;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.ft-links ul{
+    list-style-type: none;
+}
+
+.ft-links ul li{
+    margin: 1rem 0;
+}
+
+.ft-foot{
+    width: 80%;
+    margin:2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    text-align: center;
+}
+
+.ft-foot hr{
+    border:0.4px  solid #9B0483;
+}
+
+.ft-foot p{
+    font-size: 16px;
+}
+
+
+/* This is a footer in media    queruies */
+
+
+@media (max-width:1100px){
+    .foot{
+        width: 95%;
+    }
+
+
+    .ft-card p{
+        width: 100%;
+        padding: 0.1rem 0.2rem ;
+        margin-right: 10rem;
+        line-height: normal;
+        margin: 1.5rem 0;
+}
+
+    
+}
+
+@media (max-width:970px){
+    .ft-card{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:770px){
+    .foot{
+        flex-direction: column;
+    }
+
+    .ft-left,
+    .ft-right{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* This is a news class in media queries */
+
+@media (max-width:1170px){
+    .news{
+        width: 90%;
+    }
+
+    .n-card{
+        width: 30%;
+    }
+}
+
+@media (max-width:760px){
+    .n-card{
+        width: 100%;
+    }
+
+    .n-update{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* This is a live concern medai queries */
+
+@media (max-width:1100px){
+    .lc-buy-ticket{
+        width: 95%;
+    }
+}
+
+@media (max-width:930px){
+    .buy-date{
+        padding: 0.4rem 1.5rem;
+    }
+
+    .buy-location{
+        padding: 0.4rem 1.5rem;
+    }
+    .buy-location .buy-name h2{
+    font-size: 25px;
+}
+}
+
+@media (max-width:770px){
+    .buy-card{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    
+    
+    
+}
+
+
+
+/* This is a seven math media queries */
+
+@media (max-width:1170px){
+    .seven-math{
+        width: 95%;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:770px){
+
+    .seven-math{
+        flex-direction: column;
+        
+    }
+    
+    .sm-img1{
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        gap: 1rem
+    }
+    
+    .sm-img2{
+        width: 80%;
+    }
+    
+    .sm-img3{
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        gap: 1rem;
+    }
+    
+}
+
+
+/* This is a About tour class media queries */
+
+@media (max-width:1100px){
+    .About-tour{
+        width: 95%;
+    }
+}
+
+@media (max-width:770px){
+    .About-tour{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .At-left,
+    .At-right{
+        width: 100%;
+    }
+    
+    .At-left h2{
+        font-size: 30px;
+    }
+    .Ar-img{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/* This is a main disply class media queries  */
+
+@media (max-width:1100px){
+    .m-disply{
+        width: 95%;
+    }
+
+}
+
+@media (max-width:770px){
+    .m-disply{
+        text-align: center;
+    }
+
+    .md-card{
+        width: 40%;
+    }
+    
+}
+
+@media (max-width:600px){
+    .md-card{
+        width: 60%;
+    }
+    .m-disply h1{
+        top:2rem ;
+        left: 1.5rem;
+        font-size: 40px;
+    }
+    .m-disply p{
+        top: 6rem;
+        left: 1.5rem;
+        font-size: 17px;
+    }
+}
+
+/* This is a Navigation bar media queries */
+
+@media (max-width:1100px){
+    .n-menu ul{
+        display: none;
+    }
+
+    .icon-list{
+        display: block;
+    }
+}
+
+
+@media (max-width:770px){
+    .main-nav{
+        justify-content: space-between;
+    }
+
+    .n-logo img{
+        width: 220px;
+    }
+        
+    .n-icon{
+        display: none;
+    }
+
+    .icon-list{
+        font-size: 60px;
+    }
+}
+
+
